@@ -16,10 +16,20 @@
     <title>First bootstrap projects</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <header>
-        <div class="bg-success p-1 mt-1 text-center">
-          <h1>Study with Aktar</h1>
+        <div class="row bg-dark ">
+          <div class="col-lg-5 text-white">
+              <h1>Study With Aktar</h1>
+          </div>
+
+          <div class="col-lg-7 mt-1">
+            <ul class="nav justify-content-end">
+              <li class="nav-item"><a class=" text-white nav-link" href="#">About</a></li>
+              <li class="nav-item"><a class=" text-white nav-link" href="#">Contact</a></li>
+              <li class="nav-item"><a class="text-white nav-link" href="#">Email</a></li>
+            </ul>
+          </div>
         </div>
       </header>
 
@@ -96,13 +106,19 @@
                   animi ipsum labore quam voluptate provident, repudiandae nisi
                   assumenda distinctio impedit. Exercitationem perferendis
                   tempora in enim, officia, alias nobis accusamus esse vitae
-                  voluptatem possimus, sit hic aliquam repudiandae ex ducimus
-                  accusantium rem voluptas! Eum praesentium rerum hic
-                  voluptatibus? Quae, reprehenderit excepturi. Ea odit aperiam
-                  dicta amet porro, perferendis totam eaque, suscipit asperiores
-                  ab aliquid eum possimus temporibus? Temporibus, em repudiandae
-                  cum possimus rerum?
+
+                  <a href="#demo" data-toggle="collapsing">Learn more</a>
                 </p>
+                <div id="demo" class="collapsing">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quae blanditiis magnam. Ad culpa optio possimus modi non asperiores officia.</p>
+                </div>
+
+                <div class="btn-group">
+                  <button class="btn btn-outline-success btn-lg">Add</button>
+                  <button class="btn btn-outline-secondary btn-lg">
+                    Submit
+                  </button>
+                </div>
 
                 <div class="alert alert-success alert-dismissible">
                   <button class="close" aria-details="alert">&times;</button>
@@ -150,7 +166,26 @@
             </footer>
           </div>
         </div>
+
+        <div>
+          <ul class="list-group">
+            <li class="active list-group-item bg-primary">Aktar</li>
+            <li class="list-group-item bg-secondary">Lumpa</li>
+            <li class="list-group-item bg-success">Akbar</li>
+          </ul>
+        </div>
       </main>
+
+      <footer>
+        <!-- pagination -->
+        <ul class="pagination bg-dark justify-content-center p-1">
+          <li class="list-item"><a class="page-link" href="#">Pre</a></li>
+          <li class="list-item"><a class="page-link" href="#">2</a></li>
+          <li class="list-item"><a class="page-link" href="#">3</a></li>
+          <li class="list-item"><a class="page-link" href="#">4</a></li>
+          <li class="list-item"><a class="page-link" href" href="#">Next</a></li>
+        </ul>
+      </footer>
     </div>
   </body>
 </html>
